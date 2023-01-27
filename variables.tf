@@ -23,4 +23,28 @@ variable "instance_security_group_name" {
   type        = string
   default     = "launch-wizard-2"
 }
-
+variable "instance_vcp_cidr_block" {
+  description = "Value of the Name to vcp_cidr_block"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+variable "instance_enable_dns_hostnames" {
+  description = "Value of the Name to enable_dns_hostnames"
+  type        = bool
+  default     = true
+}
+variable "instance_enable_dns_support" {
+  description = "Value of the Name to enable_dns_support"
+  type        = bool
+  default     = true
+}
+variable "instance_vpc_tag_name" {
+  description = "Value of the Name to instance_vpc_tag_name"
+  type        = string
+  default     = "test-env"
+}
+variable "instance_vpc_availability_zone" {
+  description = "Value of the Name to instance_vpc_tag_name"
+  type        = string
+  default     = "us-east-1a"
+}

@@ -6,4 +6,5 @@ resource "aws_instance" "example" {
   tags = {
     Name = var.instance_name
   }
+  subnet_id = aws_subnet.subnet-uno.id
 }
